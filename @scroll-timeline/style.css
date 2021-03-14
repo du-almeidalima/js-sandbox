@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.little-container {
+  margin: auto;
+  position: relative;
+  padding: 0 15px 10px 15px;
+  top: 30%;
+  width: 40%;
+  height: 50%;
+  border: 10px solid darkcyan;
+  overflow-y: scroll;
+}
+
+@supports (animation-timeline: works) {
+  @keyframes progress {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @scroll-timeline progress-timeline {
+    /* This is not actually a time clock, but the amount scrolled is mapped in seconds for the animation*/
+    time-range: 1s;
+    /* The original container is the document, here it's assigning another source */
+    source: selector(#little-container);
+  }
+
+  .progress-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: red;
+    /* This is useful because otherwise the bar expansion would start from center going to both sides */
+    transform-origin: left center;
+    transform: scaleX(0);
+    /* forwards so the animation stay on final state and don't reset*/
+    animation: 1s linear forwards progress;
+    animation-timeline: progress-timeline;
+    z-index: 10;
+  }
+}

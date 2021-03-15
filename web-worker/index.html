@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Worker</title>
+  <style>
+    .container {
+      position: relative;
+      transform: translateY(30vw);
+      width: 50%;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button id="main">With Main Thread</button>
+    <button id="main-worker">With Main Thread and Service Worker</button>
+  </div>
+  <script src="./src/app.mjs" type="module"></script>
+</body>
+</html>

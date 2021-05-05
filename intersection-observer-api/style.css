@@ -4,68 +4,15 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.virtual-intersection {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  height: 65vh;
-  width: 70vw;
-  border: 8px dashed black;
-  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.51);
-}
-
-.section {
-  height: 100vh;
-  padding: 25vh 25vw;
-}
-
-.section-intersected {
-  color: white;
-}
-
-.section-intersected:is(.section) {
-  background-color: #313131;
-}
-
-.section-1 {
-  background-color: #9cc756;
-}
-
-.section-2 {
-  background-color: #568dc7;
-}
-
-.section-3 {
-  background-color: #c78756;
-}
-
-.section-4 {
+.navbar {
+  text-align: center;
+  padding: 10px 0;
   background-color: #9256c7;
 }
 
-.section-5 {
-  background-color: #56c7b0;
-}
-
-@media screen and (max-height: 700px), screen and (max-width: 900px){
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    font-size: 1.75vmin;
-    margin-bottom: 1rem;
-  }
+.navbar a {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }

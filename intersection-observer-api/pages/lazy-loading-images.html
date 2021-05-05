@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/lazy-loading-images-intersection-observer-api.css">
+    <title>Lazy Loading Images with Interceptor Observer API</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="./intersection-observer-api-scroll.html">Intersection Observer API Scroll</a>
+    </nav>
+</header>
+<main class="container">
+    <div style="margin-top: 100px"></div>
+    <h1>Implementing Lazy Loading with Intersection Observer API</h1>
+    <div style="margin-top: 50px"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at beatae cupiditate, dolorem ducimus eum
+        fuga hic impedit labore magni pariatur perferendis repudiandae rerum soluta ut! Mollitia numquam soluta velit
+        voluptas? Eum nobis porro quas soluta unde. Laborum, repudiandae, voluptates? Fuga, nulla, sequi! Alias aliquam
+        animi assumenda blanditiis cum cumque dolore dolores ducimus ea, exercitationem explicabo harum in magni, nulla
+        obcaecati provident ratione sunt tenetur. Earum, optio, suscipit. Eos harum, ipsam laudantium neque porro
+        reprehenderit vero? Accusamus accusantium beatae, delectus distinctio est ipsa iusto labore magni molestias
+        officia officiis placeat possimus, quam quisquam ratione sed, sequi sit sunt tempora ut!
+    </p>
+    <div style="margin-top: 100px"></div>
+
+    <img class="image image-loaded " src="https://i.pinimg.com/564x/ff/6b/09/ff6b09c80caea4a2d95e1a17c8a78911.jpg"
+         alt="Lazy Loaded Cat 1">
+    <img class="image" src="#" alt="Lazy Loaded Cat 2"
+         data-img-url="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Forange-kitten-955480082-2000.jpg"
+    >
+    <img class="image" src="#" alt="Lazy Loaded Cat 3"
+         data-img-url="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NDg2Mjc2LmFwcDQ0NzA4NV9zY3JlZW5zaG90c18wXzQzMzg3ZDBk/screen-0.jpg?fakeurl=1&type=.jpg"
+    >
+    <img class="image" src="#" alt="Lazy Loaded Cat 4"
+         data-img-url="https://www.mythirtyspot.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-18-at-10.19.29-PM-1024x712.png"
+    >
+    <img class="image" src="#" alt="Lazy Loaded Cat 5"
+         data-img-url="https://avatarfiles.alphacoders.com/125/125593.jpg"
+    >
+    <img class="image" src="#" alt="Lazy Loaded Cat 6"
+         data-img-url="https://i.pinimg.com/originals/7a/af/0f/7aaf0f1d48f57b7779c0fbcf103c2d0f.jpg"
+    >
+    <img class="image" src="#" alt="Lazy Loaded Cat 7"
+         data-img-url="https://image.winudf.com/v2/image/Y29tLmRkZXYudXNlci5DdXRlTGl0dGxlQ2F0c19zY3JlZW5fMV8xNTIzMDA5MDAxXzA1Mg/screen-1.jpg?fakeurl=1&type=.jpg"
+    >
+</main>
+<script src="../src/lazy-loading-images-intersection-observer-api.js"></script>
+</body>
+</html>

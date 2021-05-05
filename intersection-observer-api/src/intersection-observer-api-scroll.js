@@ -1,7 +1,6 @@
 "use strict"
 
 const sections = document.querySelectorAll('.section')
-
 /**
  * @type IntersectionObserverInit
  */

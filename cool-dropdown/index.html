@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Cool Dropdown Menu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="link" href="#">Some Content</a>
+        <a class="link" href="#">About</a>
+        <!-- DROPDOWN MENU -->
+        <div class="dropdown" data-dropdown role="menu">
+          <button class="dropdown__toggler link" data-dropdown-button>
+            Information
+          </button>
+          <div class="dropdown__menu">
+            <section class="dropdown__item">
+              <h2 class="dropdown__heading">Free Tutorials</h2>
+              <ul>
+                <li>
+                  <a class="dropdown__link" href="#">All</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Latest</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Popular</a>
+                </li>
+              </ul>
+            </section>
+            <section class="dropdown__item">
+              <h2 class="dropdown__heading">Courses</h2>
+              <ul>
+                <li>
+                  <a class="dropdown__link" href="#">CSS</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">JavaScript</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Angular</a>
+                </li>
+              </ul>
+            </section>
+            <section class="dropdown__item">
+              <h2 class="dropdown__heading">Blog</h2>
+              <ul>
+                <li>
+                  <a class="dropdown__link" href="#">All</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Latest</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Popular</a>
+                </li>
+              </ul>
+            </section>
+            <section class="dropdown__item">
+              <h2 class="dropdown__heading">Contact</h2>
+              <ul>
+                <li>
+                  <a class="dropdown__link" href="#">Twitter</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Newsletter</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Discord</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

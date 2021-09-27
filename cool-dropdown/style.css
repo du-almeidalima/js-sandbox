@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 1rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#dfdfdf), to(#d4d4d4));
+  background-image: linear-gradient(to bottom right, #dfdfdf, #d4d4d4);
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.75rem;
+  color: #525252;
+  cursor: pointer;
+  padding: 0;
+}
+
+.link:hover {
+  color: #060606;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__toggler:is(:focus, :active) {
+  color: #060606;
+}
+
+.dropdown__menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .5rem);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+  pointer-events: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[2];
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+}
+
+.dropdown__toggler:focus + .dropdown__menu, .dropdown__menu:is(:focus-within, :focus, :hover) {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdown__item {
+  grid-area: auto;
+}
+
+.dropdown__item ul > li {
+  list-style: none;
+  display: block;
+}
+
+.dropdown__heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+
+.dropdown__link {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: #525252;
+  text-decoration: none;
+}
+
+.dropdown__link:is(:active, :hover) {
+  color: #060606;
+}
+/*# sourceMappingURL=style.css.map */
